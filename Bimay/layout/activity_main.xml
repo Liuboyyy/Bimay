@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:text="Good Morning,"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:text="MUHAMMAD TAUFIQ ZULFIKAR"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rounded_box_background"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/forum_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+
+                        <ImageButton
+                            android:id="@+id/forum_button"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/circle_box_background"
+                            android:paddingLeft="7dp"
+                            android:paddingRight="7dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/forum_asset" />
+
+                        <TextView
+                            android:id="@+id/forum_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="Forum"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/announcement_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@id/forum_icon"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/circle_box_background"
+                            android:paddingLeft="7dp"
+                            android:paddingRight="7dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/bxs_megaphone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="Announcement"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/people_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@id/announcement_icon"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">>
+
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/circle_box_background"
+                            android:paddingLeft="7dp"
+                            android:paddingRight="7dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/people_svgrepo_com" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="People"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/more_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@id/people_icon"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">>
+
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/circle_box_background"
+                            android:paddingLeft="7dp"
+                            android:paddingRight="7dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/bxs_grid_alt" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="More"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/rounded_box_background">
+
+
+                <LinearLayout
+                    android:id="@+id/base_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/event_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/rounded_rectangle_background"
+                                android:gravity="center"
+                                android:text="Ongoing Online Class"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="100dp"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:id="@+id/clock_icon"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="0dp"
+                                    android:background="@android:color/transparent"
+                                    app:srcCompat="@drawable/clock_svgrepo_com" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="-5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_toRightOf="@id/clock_icon"
+                                    android:gravity="center"
+                                    android:text="45 m"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="15dp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/course_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="LD01 - LEC"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/course_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/course_details"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="Mobile Programming"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height='1dp'
+                        android:background="#dbdbdb"
+                        android:layout_alignBottom="@+id/course_name"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="top"
+                                android:background="@drawable/circle_outline_background"
+                                app:srcCompat="@drawable/briefcase_svgrepo_com" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="Undergraduate\nBINUS University"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp">
+
+                            <ImageButton
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/circle_outline_background"
+                                app:srcCompat="@drawable/info_svgrepo_com" />
+
+                            <TextView
+                                android:id="@+id/course_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="GSLC"
+                                android:textSize="15dp"
+                                android:textColor="@color/black"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="0dp"
+                                android:background="@drawable/circle_outline_background"
+                                app:srcCompat="@drawable/clipboard_svgrepo_com" />
+
+                            <TextView
+                                android:id="@+id/course_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="MOBI6059001"
+                                android:textSize="15dp"
+                                android:textColor="@color/black"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp">
+
+                            <ImageButton
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="1dp"
+                                android:background="@drawable/circle_outline_background"
+                                app:srcCompat="@drawable/smaller_clock" />
+
+                            <TextView
+                                android:id="@+id/course_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="07:20 - 09:00 GMT+7"
+                                android:textSize="15dp"
+                                android:textColor="@color/black"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <ImageButton
+                            android:id="@+id/dropdown_button"
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:background="@color/white"
+                            app:srcCompat="@drawable/bx_chevron_down"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height='1dp'
+                        android:layout_marginTop="10dp"
+                        android:background="#dbdbdb"
+                        android:visibility="visible"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/expandable_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Student activities in session 4"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/not_attempted"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Not Attempted"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/in_progress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/not_attempted"
+                                android:layout_marginLeft="60dp"
+                                android:text="In Progress"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/in_progress"
+                                android:layout_marginLeft="60dp"
+                                android:text="Completed"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/not_attempted_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="30"
+                                android:textSize="50dp"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/in_progress_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="70dp"
+                                android:layout_toRightOf="@+id/not_attempted_value"
+                                android:text="0"
+                                android:textSize="50dp"
+                                android:textColor="#f18700"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="85dp"
+                                android:layout_toRightOf="@+id/in_progress_value"
+                                android:text="0"
+                                android:textSize="50dp"
+                                android:textColor="#7aac55"/>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height='1dp'
+                            android:layout_marginTop="10dp"
+                            android:background="#dbdbdb"
+                            android:visibility="visible"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="VIEW UPCOMING"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_gravity="right"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <ImageButton
+                            android:id="@+id/reverse_dropdown_button"
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:background="@color/white"
+                            app:srcCompat="@drawable/bx_chevron_up"
+                            android:visibility="visible"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottom_navigation_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    app:menu="@menu/bottom_nav_menu"
+                    app:labelVisibilityMode="unlabeled" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
